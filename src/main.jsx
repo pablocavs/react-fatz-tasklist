@@ -1,0 +1,22 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.jsx";
+import './index.css'
+import { TaskContextProvider } from "./context/TaskContext";
+
+/*ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <TaskContextProvider>
+      <App />
+    </TaskContextProvider>
+  </React.StrictMode>
+);*/
+
+ReactDOM.render(
+  <React.StrictMode>
+    <TaskContextProvider>
+      <App />
+    </TaskContextProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
